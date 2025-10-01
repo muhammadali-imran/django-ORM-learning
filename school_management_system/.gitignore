@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+*.env
+
+# Migrations (optional, keep if you want clean repo)
+*/migrations/__pycache__/
+*/migrations/*.py
+!*/migrations/__init__.py

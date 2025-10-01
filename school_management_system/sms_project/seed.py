@@ -1,13 +1,13 @@
 import random
 from faker import Faker
-from myapp.models import Student, Teacher, Course, Department, Enrollment
+from sms_project.models import Student, Teacher, Course, Department, Enrollment
 import os
 import django
 
 
 
 fake = Faker()
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "school_management_system.settings")
 django.setup()
 
 def seed_database():
