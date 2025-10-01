@@ -1,8 +1,14 @@
 import random
 from faker import Faker
-from school.models import Student, Teacher, Course, Department, Enrollment
+from myapp.models import Student, Teacher, Course, Department, Enrollment
+import os
+import django
+
+
 
 fake = Faker()
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.settings")
+django.setup()
 
 def seed_database():
 
